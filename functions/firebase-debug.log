@@ -1,0 +1,27 @@
+[debug] [2018-09-05T20:23:16.181Z] ----------------------------------------------------------------------
+[debug] [2018-09-05T20:23:16.183Z] Command:       /Users/rafael/.nvm/versions/node/v8.11.2/bin/node /Users/rafael/.nvm/versions/node/v8.11.2/bin/firebase serve --only functions
+[debug] [2018-09-05T20:23:16.184Z] CLI Version:   4.2.1
+[debug] [2018-09-05T20:23:16.184Z] Platform:      darwin
+[debug] [2018-09-05T20:23:16.184Z] Node Version:  v8.11.2
+[debug] [2018-09-05T20:23:16.184Z] Time:          Wed Sep 05 2018 17:23:16 GMT-0300 (-03)
+[debug] [2018-09-05T20:23:16.184Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-09-05T20:23:16.198Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-09-05T20:23:16.198Z] > authorizing via signed-in user
+[debug] [2018-09-05T20:23:16.200Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/server-mecontrata  
+ 
+[debug] [2018-09-05T20:23:17.207Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-05T20:23:17.208Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/server-mecontrata  
+ 
+[debug] [2018-09-05T20:23:18.644Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/rafael/Code/server'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-09-05T20:23:19.597Z] Fetching environment
+[debug] [2018-09-05T20:23:19.599Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/278912590859:getServerAppConfig  
+ 
+[debug] [2018-09-05T20:23:20.479Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-05T20:23:20.480Z] Starting @google-cloud/functions-emulator
+[debug] [2018-09-05T20:23:22.049Z] Parsing function triggers
+[info] ✔  functions: getApiKeys: http://localhost:5000/server-mecontrata/us-central1/getApiKeys
