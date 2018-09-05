@@ -6,8 +6,9 @@
     "serve": "firebase serve --only functions",
     "shell": "firebase functions:shell",
     "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
+    "deploy": "npm run compile && firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "compile": "babel src --out-dir . --copy-files --ignore node_modules"
   },
   "dependencies": {
     "cors": "^2.8.4",
@@ -15,8 +16,8 @@
     "firebase-functions": "^2.0.3"
   },
   "devDependencies": {
-    "eslint": "^4.12.0",
-    "eslint-plugin-promise": "^3.6.0"
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
   },
   "private": true
 }
