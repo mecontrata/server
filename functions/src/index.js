@@ -1,8 +1,6 @@
 const functions = require("firebase-functions");
 const firebase = require("firebase-admin");
-const cors = require("cors")({
-  origin: false
-});
+const cors = require("cors")();
 
 firebase.initializeApp(functions.config().firebase);
 
@@ -16,7 +14,7 @@ exports.getApiKeys = functions.https.onRequest(async (request, response) => {
     .then(doc => doc.data())
     .catch(error => error);
 
-  return cors(request, response, () => {
-    response.status(200).send(result);
-  });
+  cors(request, response, () => {});
+
+  return response.status(200).send(result);
 });

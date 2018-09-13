@@ -4,9 +4,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 const functions = require("firebase-functions");
 const firebase = require("firebase-admin");
-const cors = require("cors")({
-  origin: false
-});
+const cors = require("cors")();
 
 firebase.initializeApp(functions.config().firebase);
 
@@ -22,9 +20,9 @@ exports.getApiKeys = functions.https.onRequest((() => {
       return error;
     });
 
-    return cors(request, response, function () {
-      response.status(200).send(result);
-    });
+    cors(request, response, function () {});
+
+    return response.status(200).send(result);
   });
 
   return function (_x, _x2) {
